@@ -54,7 +54,7 @@
 <details>
     <summary>Other tests</summary>
     <br>
-    <p>The best way I found to test if the behavior is exactly the same as Bash was by using a terminal multiplexer (tmux)."</p>
+    <p>The best way I found to test if the behavior is exactly the same as Bash was by using a terminal multiplexer (tmux).</p>
     <ol>
         <li>Open the terminal and type tmux (if you have it installed; otherwise, run apt-get update ; apt-get install tmux).</li>
         <li>Navigate to the root of your project.</li>
@@ -63,7 +63,6 @@
         <li>Execute the minishell (<b>./minishell</b>)</li>
         <li>Press <b>ctrl + b</b> and then : (it will open prompt at the end of your screen)</li>
         <li>Write: <b>setw synchronize-panes on</b></li>
-        <li>
         <li>From now on, everything you write in one pane will be written in the other as well.</li>
     </ol>
 </details>
