@@ -45,11 +45,29 @@
 <html>
     <p>
     <b>Step 4:</b> Tests<br>
-    There is an XLS document in the repository that contains some of the most important tests for this project. There are many more that can be created. The project can be run without any environment variables using the command:
+    There is an XLS document in the repository that contains some of the most important tests for this project. The project can be run without any environment variables using the command:
     </p>
 </html>
 
     env -i ./minishell
+
+<details>
+    <summary>Other tests</summary>
+    <br>
+    <p>The best way that i found to test if the beahvior of exacly the same as bash was using one terminal multiplexer (tmux).</p>
+    <ol>
+        <li>Open the terminal an write tmux (if you have it instaled, otherwise just run apt-get update; apt-get instal tmux)
+        </li>
+        <li>Navigate to the root of your project</li>
+        <li>write bash (to enter bash)</li>
+        <li>Press ctrl + b and then % (shift + 5, in my case)</li>
+        <li>Execute the minishell (./minishell)<li>Execute the minishell
+        <li>Press ctrl + b and then : (it will open prompt at the end of your screen)</li>
+        <li>write setw synchronize-panes on</li>
+        <li>
+        <li>From now on everithing that you write on pane will be writen on the other as well</li>
+    </ol>
+</details>
 
 ## Improvements
 <html>
