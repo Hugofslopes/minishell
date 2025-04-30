@@ -49,7 +49,7 @@
     </p>
 </html>
 
-env -i ./minishell
+    env -i ./minishell
 
 ## Improvements
 <html>
