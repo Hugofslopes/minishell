@@ -12,7 +12,7 @@
 <html>
     <p>
         <b>Minishell</b> is a project from 42 School that aims to replicate the behavior of bash.<br>
-        In this project, we should handle pipes and redirections (<, <<, >, >>), as well as some built-in commands (echo, export, unset, cd, exit, env, and pwd). The project should manage SIGINT, SIGQUIT, and EOF (Ctrl, Ctrl+C, and Ctrl+D). It should handle expansions and quotes (excluding open quotes) and execute the appropriate executable based on the PATH or if an absolute path is provided. This was the first group project from 42 and was made with [Pedro Branco](https://github.com/LN-Dark).
+        In this project, we should handle pipes and redirections (<, <<, >, >>), as well as some built-in commands (echo, export, unset, cd, exit, env, and pwd). The project should manage SIGINT, SIGQUIT, and EOF (Ctrl, Ctrl+C, and Ctrl+D). It should handle expansions and quotes (excluding open quotes) and execute the appropriate executable based on the PATH or if an absolute path is provided. This was the first group project from 42 and was made with Pedro Branco (https://github.com/LN-Dark).
     </p>
 </html>
 
