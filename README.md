@@ -15,7 +15,7 @@ In this project, we should handle pipes and redirections (<, <<, >, >>), as well
 <ol>
     <li>Initialize all the variables that the program will need, including creating a duplicated of the environment variables (<b>init_ms( )</b>). If there aren't any environment variables, we initialize the envp variable as empty.</li>
     <li>The next step is to call the functions to handle the signals.</li>
-    <li>Our program has a personalized prompt, so we create a string that includes the username and the current working directory (pwd), which will serve as our prompt.<b>get_prompt( )</b></li>
+    <li>Our program has a personalized prompt, so we create a string that includes the username and the current working directory (pwd), which will serve as our prompt (<b>get_prompt( )</b>).</li>
     <li>Use <b>readline( )</b> to get the input from the user</li>
     <li>Call <b>add_history( )</b> to save the inputs from the user and provide the ability to use the arrow keys to scroll through previously entered inputs.</li>
     <li>Call <b>handle_input( )</b> to check for any pipes and save each one of them in a linked list.</li>
