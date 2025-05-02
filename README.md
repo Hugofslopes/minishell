@@ -12,6 +12,19 @@ In this project, we should handle pipes and redirections (<, <<, >, >>), as well
 <a href="https://github.com/LN-Dark" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color:rgb(237, 242, 247); text-align: center; text-decoration: none; border-radius: 5px; margin-left: 10px;">Pedro Branco</a>
 
 ## Code
+<ol>
+    <li>Initialize all the variables that the program will need, including creating a duplicated of the environment variables (<b>init_ms( )</b>). If there aren't any environment variables, we initialize the envp variable as empty.</li>
+    <li>The next step is to call the functions to handle the signlas</li>
+    <li>Our program has a personalized prompt, so we create a string that includes the username and the current working directory (pwd), which will serve as our prompt.<b>get_prompt( )</b></li>
+    <li>Use <b>readline( )</b> to get the input from the user</li>
+    <li>Call <b>add_history( )</b> to save the inputs from the user and provide the ability to use the arrow keys to scroll through previously entered inputs.</li>
+    <li>Call <b>handle_input( )</b> to check for any pipes and save each one of them in a linked list.</li>
+    <li>Call <b>process_pipes( )</b> to execute each one of the pipes</li>
+    <li>Call <b>process_redirects( )</b> to check for redirects (including heredocs) and execute them.</li>
+    <li>Call <b>choose_builtin()</b> to determine if the command is one of the implemented built-ins; if not, send it to <b>execve( )</b>.</li>
+</ol>
+   Almost at every step, we check for errors that are related to the function itself.
+
 ## Code Setup   
 <b>Step 1:</b> Clone the repository
 
@@ -36,7 +49,7 @@ In this project, we should handle pipes and redirections (<, <<, >, >>), as well
     env -i ./minishell
 
 <details>
-    <summary>Other tests(Using tmux)</summary>
+    <summary>Other tests (Using tmux)</summary>
     <br>
     <p>The best way I found to test if the behavior is exactly the same as Bash was by using a terminal multiplexer (tmux).</p>
     <ol>

@@ -6,7 +6,7 @@
 /*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:34:21 by hfilipe-          #+#    #+#             */
-/*   Updated: 2025/04/17 11:53:44 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/05/02 09:34:49 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,7 @@ void	ft_readcmd(t_ms **ms)
 	(*ms)->here_check = 0;
 	(*ms)->pipes = NULL;
 	get_prompt(ms);
-	//(*ms)->input = readline((*ms)->prompt);
-	(*ms)->input = readline("minishell: ");
+	(*ms)->input = readline((*ms)->prompt);
 	g_signal_handler(ms);
 	if ((*ms)->input == NULL)
 	{
